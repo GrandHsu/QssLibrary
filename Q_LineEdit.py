@@ -22,16 +22,17 @@ class Window(QWidget):
     def __init__(self, parent = None):
         super(Window, self).__init__(parent)
         # 加载ui文件
-        self.ui = uic.loadUi("ui/buttons.ui", self)
+        self.ui = uic.loadUi("ui/QLineEdit.ui", self)
 
         # 设置按钮属性(不同的属性对应不同的样式)
-        self.ui.primaryBtn.setProperty("primary", True)
-        self.ui.warningBtn.setProperty("warning", True)
-        self.ui.defaultBtn.setProperty("default", True)
-        self.ui.dangerBtn.setProperty("danger", True)
-        self.ui.successBtn.setProperty("success", True)
-        self.ui.inverseBtn.setProperty("inverse", True)
-        self.ui.infoBtn.setProperty("info", True)
+        self.ui.errorEdit.setProperty("error", True)
+        self.ui.successEdit.setProperty("success", True)
+
+        self.ui.searchEdit.setProperty("search", True)
+
+        # 同时带有两种属性
+        self.ui.search2Edit.setProperty("search", True)
+        self.ui.search2Edit.setProperty("error", True)
 
         # 由于设置属性后需要重新设置样式
         Application.instance().initSkin()

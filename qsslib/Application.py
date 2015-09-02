@@ -7,7 +7,7 @@ Created on 2015年9月2日
 @email: 892768447@qq.com
 @description: 继承QApplication
 '''
-from PyQt5.QtCore import QCoreApplication
+
 from PyQt5.QtWidgets import QApplication
 
 
@@ -19,10 +19,13 @@ class Application(QApplication):
 
     def __init__(self, *args, **kwargs):
         super(Application, self).__init__(*args, **kwargs)
+        self.qss = ""
         self.initSkin()
 
     def initSkin(self):
         try:
-            self.setStyleSheet(open("qsslib/qsslib.qss", "r").read())
+            if not self.qss:
+                self.qss = open("qsslib/qsslib.qss", "r").read()
+            self.setStyleSheet(self.qss)
         except Exception as e:
             print(e)
