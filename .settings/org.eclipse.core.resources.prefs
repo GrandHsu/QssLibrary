@@ -1,4 +1,8 @@
 eclipse.preferences.version=1
 encoding//qsslib/Application.py=utf-8
+encoding//qsslib/widgets/LineEdit.py=utf-8
+encoding//qsslib/widgets/PushButton.py=utf-8
+encoding//qsslib/widgets/base.py=utf-8
+encoding/QComboBox.py=utf-8
 encoding/Q_LineEdit.py=utf-8
 encoding/Q_PushButton.py=utf-8

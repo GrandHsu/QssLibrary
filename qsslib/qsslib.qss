@@ -139,7 +139,11 @@ QLineEdit[enabled="false"] {
 }
 /*Search QLineEdit*/
 
-QLineEdit[search="true"] {
+QLineEdit[search-left="true"] {
+    padding-left: 24px;
+    background: url(qsslib/img/search.png) no-repeat center left;
+}
+QLineEdit[search-right="true"] {
     padding-right: 24px;
     background: url(qsslib/img/search.png) no-repeat center right;
 }
@@ -160,4 +164,23 @@ QLineEdit[success="true"] {
 }
 QLineEdit[success="true"]:focus {
     outline: 0;
+}
+/*QComboBox Style*/
+
+QComboBox {
+    border: none;
+    border-radius: 6px;
+    min-width: 80px;
+    min-height: 30px;
+    background-color: #1abc9c;
+}
+QComboBox::drop-down {
+    width: 25px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+QComboBox::down-arrow {
+    color: #00ff00;
+    border-style: solid;
+    border-width: 8px 6px;
 }
