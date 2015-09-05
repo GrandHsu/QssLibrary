@@ -184,3 +184,63 @@ QComboBox::down-arrow {
     border-style: solid;
     border-width: 8px 6px;
 }
+
+/*Page List Widget Style*/
+QPushButton#_previous_btn,QPushButton#_next_btn {
+    max-width: 49px;
+    max-height: 39px;
+    min-width: 49px;
+    min-height: 39px;
+    width: 49px;
+    height: 39px;
+    border-color: #E4E7EA;
+    
+}
+QPushButton#_previous_btn:hover,QPushButton#_next_btn:hover {
+    border-color: #1ABC9C;
+    background-color: #1ABC9C;
+    
+}
+QPushButton#_previous_btn:pressed,QPushButton#_next_btn:pressed {
+    border-color: #1ABC9C;
+    background-color: #1ABC9C;
+    
+}
+QPushButton#_previous_btn {
+    padding-right: 1px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 0px;
+    background: #E4E7EA url(qsslib/img/arrow_left_white.png) no-repeat center center;
+}
+QPushButton#_next_btn {
+    padding-left: 1px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 6px;
+    background: #E4E7EA url(qsslib/img/arrow_right_white.png) no-repeat center center;
+}
+
+QListView#_page_list_widget {
+    max-height: 40px;
+    background-color: rgba(0,0,0,0);
+}
+QListView#_page_list_widget::item {
+    margin: 1px;
+    color: white;
+    background-color: #E4E7EA;
+    height: 40px;
+}
+
+QListView#_page_list_widget::item:selected {
+    background-color: #1ABC9C;
+}
+QListView#_page_list_widget::item:focus {
+    background-color: #1ABC9C;
+}
+
+QListView#_page_list_widget::item:hover {
+    background-color: #1ABC9C;
+}
