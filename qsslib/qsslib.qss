@@ -20,7 +20,7 @@ QPushButton[enabled="false"] {
     border-color: #1abc9c;
     background-color: #bdc3c7;
 }
-/*Primary Button Style*/
+/*Default Button Style*/
 
 QPushButton[default="true"] {
     background-color: #bdc3c7;
@@ -243,4 +243,182 @@ QListView#_page_list_widget::item:focus {
 
 QListView#_page_list_widget::item:hover {
     background-color: #1ABC9C;
+}
+
+/*QScrollBar Style*/
+
+QScrollBar:vertical {
+    background: transparent;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+QScrollBar:horizontal {
+    background: transparent;
+    height: 10px;
+    margin: 0px 0px 0px 0px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+QScrollBar:vertical:hover,QScrollBar:horizontal:hover {
+    background: rgba(0, 0, 0, 30);
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background: rgba(0, 0, 0, 50);
+    width: 10px;
+    border-radius: 5px;
+    border: none;
+}
+QScrollBar::handle:horizontal {
+    background: rgba(0, 0, 0, 50);
+    height: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+QScrollBar::handle:vertical:hover,QScrollBar::handle:horizontal:hover {
+    background: rgba(0, 0, 0, 100);
+}
+
+QScrollBar::add-page:vertical {
+    width: 10px;
+    background: transparent;
+}
+QScrollBar::add-page:horizontal {
+    height: 10px;
+    background: transparent;
+}
+
+QScrollBar::sub-page:vertical {
+    width: 10px;
+    background: transparent;
+}
+QScrollBar::sub-page:horizontal {
+    height: 10px;
+    background: transparent;
+}
+
+QScrollBar::sub-line:vertical {
+    height: 12px;
+    width: 10px;
+    background: transparent;
+    subcontrol-position: top;
+}
+QScrollBar::sub-line:horizontal {
+    height: 10px;
+    width: 12px;
+    background: transparent;
+    subcontrol-position: left;
+}
+
+QScrollBar::up-arrow:vertical {
+    image: url(qsslib/img/scrollbar_arrowup_normal.png);
+}
+QScrollBar::left-arrow:horizontal {
+    image: url(qsslib/img/scrollbar_arrowleft_normal.png);
+}
+
+QScrollBar::up-arrow:vertical:hover {
+    image: url(qsslib/img/scrollbar_arrowup_down.png);
+}
+QScrollBar::left-arrow:horizontal:hover {
+    image: url(qsslib/img/scrollbar_arrowleft_down.png);
+}
+
+QScrollBar::up-arrow:vertical:pressed {
+    image: url(qsslib/img/scrollbar_arrowup_highlight.png);
+}
+QScrollBar::left-arrow:horizontal:pressed {
+    image: url(qsslib/img/scrollbar_arrowleft_highlight.png);
+}
+
+QScrollBar::add-line:vertical {
+    height: 12px;
+    width: 10px;
+    background: transparent;
+    subcontrol-position: bottom;
+}
+QScrollBar::add-line:horizontal {
+    height: 10px;
+    width: 12px;
+    background: transparent;
+    subcontrol-position: right;
+}
+
+QScrollBar::down-arrow:vertical {
+    image: url(qsslib/img/scrollbar_arrowdown_normal.png);
+}
+QScrollBar::right-arrow:horizontal {
+    image: url(qsslib/img/scrollbar_arrowright_normal.png);
+}
+
+QScrollBar::down-arrow:vertical:hover {
+    image: url(qsslib/img/scrollbar_arrowdown_down.png);
+}
+QScrollBar::right-arrow:horizontal:hover {
+    image: url(qsslib/img/scrollbar_arrowright_down.png);
+}
+
+QScrollBar::down-arrow:vertical:pressed {
+    image: url(qsslib/img/scrollbar_arrowdown_highlight.png);
+}
+QScrollBar::right-arrow:horizontal:pressed {
+    image: url(qsslib/img/scrollbar_arrowright_highlight.png);
+}
+
+/*QProgressBar Style*/
+QProgressBar{
+    height: 12px;
+    background: #ebedef;
+    border-radius: 6px;
+    text-align: center;
+}
+QProgressBar::chunk {
+    border-radius: 6px;
+    background: #1abc9c;
+}
+
+/*QSlider*/
+QSlider::groove:horizontal {
+    height: 12px;
+    background: #ebedef;
+    border-radius: 6px;
+}
+QSlider::groove:vertical {
+    width: 12px;
+    background: #ebedef;
+    border-radius: 6px;
+}
+QSlider::sub-page:horizontal {
+    background: #1abc9c;
+    height: 12px;
+    border-radius: 6px;
+}
+QSlider::add-page:vertical {
+    background: #1abc9c;
+    width: 12px;
+    border-radius: 6px;
+}
+QSlider::handle:horizontal {
+    background: #16a085;
+    width: 18px;
+    height: 18px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 9px;
+}
+QSlider::handle:vertical {
+    background: #16a085;
+    width: 18px;
+    height: 18px;
+    margin-left: -3px;
+    margin-right: -3px;
+    border-radius: 9px;
+}
+QSlider::handle:vertical:hover,QSlider::handle:horizontal:hover {
+    background: #48c9b0;
 }

@@ -10,3 +10,6 @@
 #
 [QPageWidget-分页控件](https://github.com/892768447/QssLibrary/blob/master/Screenshot/QPageWidget.jpg "QPageWidget-分页控件")
 ![3](https://github.com/892768447/QssLibrary/blob/master/Screenshot/QPageWidget.jpg)
+#
+[QScrollBarAndQProgressBarAndQSlider-样式](https://github.com/892768447/QssLibrary/blob/master/Screenshot/QScrollBarAndQProgressBarAndQSlider.jpg "QScrollBarAndQProgressBarAndQSlider-样式")
+![4](https://github.com/892768447/QssLibrary/blob/master/Screenshot/QScrollBarAndQProgressBarAndQSlider.jpg)
